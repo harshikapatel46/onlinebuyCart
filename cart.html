@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="cart.css" rel="stylesheet">
+ <script src="cart.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+</style>
+</head>
+<body>
+
+<div class="cards-row">
+  <div class="card">
+    <div class="card__image-wrap">
+      <span class="card__badge card__badge--sale">Sale</span>
+      <button class="card__wish" onclick="this.classList.toggle('active')" aria-label="Add to wishlist">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1a1710" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </button>
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80" alt="Meridian Watch" loading="lazy">
+      <button class="card__quick-add">Quick Add to Bag</button>
+    </div>
+    <div class="card__body">
+      <div class="card__meta">
+        <span class="card__category">Timepieces</span>
+        <div class="card__rating">
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <span class="card__rating-count">(148)</span>
+        </div>
+      </div>
+      <h2 class="card__name">Royal Zenith Automatic</h2>
+      <p class="card__sub">38mm · Sapphire crystal · 50m water resistant</p>
+      <div class="card__swatches">
+        <div class="swatch active" style="background:#c8a96e;" title="Champagne Gold"></div>
+        <div class="swatch" style="background:#2c2c2c;" title="Midnight Black"></div>
+        <div class="swatch" style="background:#a8b8c8;" title="Silver"></div>
+        <div class="swatch" style="background:#8b5e52;" title="Rose Gold"></div>
+        <span class="swatch-label">Champagne Gold</span>
+      </div>
+      <div class="card__price-row">
+        <div class="card__prices">
+          <span class="price-current">₹17,800</span>
+          <span class="price-original">₹23,800</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+          <span class="price-save">Save ₹6000</span>
+          <button class="card__add-btn" aria-label="Add to cart">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="card__divider"></div>
+      <div class="card__stock">
+        <div class="stock-dot low"></div>
+        Only 4 left in stock
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-wrap">
+      <span class="card__badge card__badge--new">New</span>
+      <button class="card__wish" onclick="this.classList.toggle('active')" aria-label="Add to wishlist">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1a1710" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </button>
+      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&q=80" alt="Altitude Trainer" loading="lazy">
+      <button class="card__quick-add">Quick Add to Bag</button>
+    </div>
+    <div class="card__body">
+      <div class="card__meta">
+        <span class="card__category">Footwear</span>
+        <div class="card__rating">
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span style="color:#d0c8b8;">★</span>
+          </div>
+          <span class="card__rating-count">(62)</span>
+        </div>
+      </div>
+      <h2 class="card__name">Altitude Trainer → Urban Stride Trainer</h2>
+      <p class="card__sub">Carbon-fibre sole · Merino collar · Unisex</p>
+      <div class="card__swatches">
+        <div class="swatch active" style="background:#f0ebe0;" title="Bone"></div>
+        <div class="swatch" style="background:#4a5568;" title="Slate"></div>
+        <div class="swatch" style="background:#2d6a4f;" title="Forest"></div>
+        <span class="swatch-label">Bone</span>
+      </div>
+      <div class="card__price-row">
+        <div class="card__prices">
+          <span class="price-current">₹16,200</span>
+        </div>
+        <button class="card__add-btn" aria-label="Add to cart">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="card__divider"></div>
+      <div class="card__stock">
+        <div class="stock-dot"></div>
+        In stock · Free shipping
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
